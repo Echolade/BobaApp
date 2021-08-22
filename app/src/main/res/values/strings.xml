@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">boba</string>
+
+    <string-array name="bobaplace">
+        <item>Boba Guys</item>
+        <item>Ten Ren</item>
+        <item>Mr. Suns</item>
+        <item>N7</item>
+        <item>Teaspoon</item>
+        <item>Tea Era</item>
+        <item>Sunbright</item>
+        <item>Happy Lemon</item>
+        <item>Share Tea</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>too sweet</item>
+        <item>good tea</item>
+        <item>cool mustache</item>
+        <item>nitrogen element</item>
+        <item>boop</item>
+        <item>boop</item>
+        <item>boop</item>
+        <item>boop</item>
+        <item>boop</item>
+    </string-array>
+
+
+
+</resources>
