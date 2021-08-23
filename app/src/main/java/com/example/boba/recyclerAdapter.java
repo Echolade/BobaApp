@@ -4,8 +4,6 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Filter;
-import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -15,23 +13,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class recyclerAdapter extends RecyclerView.Adapter<recyclerAdapter.myViewholder>  {
 
-    String data1 [], data2[];
-    String fullist [];
-    Context context;
-    int images[];
+public class recyclerAdapter extends RecyclerView.Adapter<recyclerAdapter.myViewholder> {
+
+    private ArrayList<Data> cardinfo;
 
     // constructor
-    public recyclerAdapter(Context ct, String bobaplace[], String description[], int logos[]) {
+    public recyclerAdapter(ArrayList<Data> cardinfo) {
 
-        context = ct;
-        data1 = bobaplace;
-        data2 = description;
-        images = logos;
-
-        this.data1 = bobaplace;
-        this.fullist = new ArrayList<>(data1);
+        this.cardinfo = cardinfo;
     }
 
     //references each element to the xml element
@@ -39,7 +29,7 @@ public class recyclerAdapter extends RecyclerView.Adapter<recyclerAdapter.myView
 
         TextView bobaplace, description;
         ImageView logos;
-        RelativeLayout my_row;
+//        RelativeLayout my_row;
 
         public myViewholder(@NonNull View itemView) {
             super(itemView);
@@ -47,7 +37,7 @@ public class recyclerAdapter extends RecyclerView.Adapter<recyclerAdapter.myView
             bobaplace = itemView.findViewById(R.id.bobaplace);
             description = itemView.findViewById(R.id.description);
             logos = itemView.findViewById(R.id.logos);
-            my_row = itemView.findViewById(R.id.my_row);
+//            my_row = itemView.findViewById(R.id.my_row);
         }
     }
 
@@ -55,17 +45,21 @@ public class recyclerAdapter extends RecyclerView.Adapter<recyclerAdapter.myView
     @NonNull
     @Override
     public myViewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.my_row, parent,false);
+//        LayoutInflater inflater = LayoutInflater.from(context);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.my_row, parent,false);
+//        MyViewholder ehv = new MyViewholder(view);
         return new myViewholder (view);
 
     }
     // attaches each input to its respective area in the xml
     @Override
     public void onBindViewHolder(@NonNull myViewholder holder, int position) {
-        holder.bobaplace.setText(data1[position]);
-        holder.description.setText(data2[position]);
-        holder.logos.setImageResource(images[position]);
+
+        Data item = cardinfo.get(position);
+
+        holder.bobaplace.setText(item.getBobaplace());
+        holder.description.setText(item.getDescription());
+        holder.logos.setImageResource(item.getLogos());
 
 
 //        click on row to open new activity
@@ -77,7 +71,7 @@ public class recyclerAdapter extends RecyclerView.Adapter<recyclerAdapter.myView
     @Override
     public int getItemCount() {
 
-        return images.length;
+        return cardinfo.size();
     }
 
 
@@ -92,14 +86,14 @@ public class recyclerAdapter extends RecyclerView.Adapter<recyclerAdapter.myView
 //
 //        private Filter examplefilter = new Filter() {
 //            @Override
-//            protected FilterResults performFiltering(CharSequence charSequence) {
-//                 List<String> filteredList = new ArrayList<>();
+//            protected FilterResults performFiltering(CharSequence constraint) {
+//                  = new ArrayList<>();
 //
-//                 if (charSequence.toString().isEmpty()) {
-//                     filteredlist.addall(fullist);
-//                 } else {
-//                     for (String )
-//                 }
+//                if (constraint == null || constraint.length() == 0) {
+//                    data1.addAll(fullist);
+//                } else {
+//                    for (String )
+//                }
 //            }
 //
 //            @Override
