@@ -16,6 +16,8 @@
         android:layout_marginEnd="16dp"
         android:onClick="enter"
         android:text="Boba Places"
+        android:textColor="@color/white"
+        app:backgroundTint="#C1905E"
         app:layout_constraintBottom_toTopOf="@+id/boba_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -48,6 +50,43 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/boba_image" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:capitalize="characters"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Boba App"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F0C88C"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <FrameLayout
+        android:layout_width="228dp"
+        android:layout_height="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boba_image">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/scene_root">
+
+        <include layout="@layout/scene_one" />
+    </FrameLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

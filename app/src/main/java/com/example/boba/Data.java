@@ -20,6 +20,7 @@ public class Data {
     }
 
     public String getBobaplace() {
+
         return bobaplace;
     }
 

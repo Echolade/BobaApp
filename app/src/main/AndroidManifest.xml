@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Boba">
         <activity
+            android:name=".testActivity"
+            android:exported="true"
+            android:label="@string/title_activity_test"
+            android:theme="@style/Theme.Boba.NoActionBar" />
+        <activity
             android:name=".BobaLog"
             android:exported="true" />
         <activity

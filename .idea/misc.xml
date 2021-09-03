@@ -4,9 +4,25 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/adai5/AndroidStudioProjects/boba/app/src/main/res/drawable/animation.xml" value="0.3828125" />
+        <entry key="..\:/Users/adai5/AndroidStudioProjects/boba/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
+        <entry key="..\:/Users/adai5/AndroidStudioProjects/boba/app/src/main/res/drawable/ic_search.xml" value="0.21979166666666666" />
+        <entry key="..\:/Users/adai5/AndroidStudioProjects/boba/app/src/main/res/drawable/slideshow.xml" value="0.3648148148148148" />
         <entry key="..\:/Users/adai5/AndroidStudioProjects/boba/app/src/main/res/layout/activity_boba_log.xml" value="0.30265210608424337" />
         <entry key="..\:/Users/adai5/AndroidStudioProjects/boba/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/adai5/AndroidStudioProjects/boba/app/src/main/res/layout/activity_spring_animation.xml" value="0.3491847826086957" />
+        <entry key="..\:/Users/adai5/AndroidStudioProjects/boba/app/src/main/res/layout/activity_test.xml" value="0.33" />
+        <entry key="..\:/Users/adai5/AndroidStudioProjects/boba/app/src/main/res/layout/content_main.xml" value="0.3491847826086957" />
+        <entry key="..\:/Users/adai5/AndroidStudioProjects/boba/app/src/main/res/layout/content_test.xml" value="0.415625" />
+        <entry key="..\:/Users/adai5/AndroidStudioProjects/boba/app/src/main/res/layout/fragment_first.xml" value="0.33" />
+        <entry key="..\:/Users/adai5/AndroidStudioProjects/boba/app/src/main/res/layout/fragment_second.xml" value="0.5" />
         <entry key="..\:/Users/adai5/AndroidStudioProjects/boba/app/src/main/res/layout/my_row.xml" value="0.33" />
+        <entry key="..\:/Users/adai5/AndroidStudioProjects/boba/app/src/main/res/layout/nav_header_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/adai5/AndroidStudioProjects/boba/app/src/main/res/layout/scene1.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/adai5/AndroidStudioProjects/boba/app/src/main/res/layout/scene_one.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/adai5/AndroidStudioProjects/boba/app/src/main/res/menu/activity_main_drawer.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/adai5/AndroidStudioProjects/boba/app/src/main/res/menu/boba_menu.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/adai5/AndroidStudioProjects/boba/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/adai5/AndroidStudioProjects/boba/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.22135416666666666" />
       </map>
     </option>
   </component>
