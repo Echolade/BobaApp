@@ -13,6 +13,7 @@ import androidx.dynamicanimation.animation.SpringForce;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 import com.example.boba.databinding.FragmentSecondBinding;
+import com.google.android.material.transition.MaterialContainerTransform;
 
 public class SecondFragment extends Fragment {
 
@@ -65,7 +66,6 @@ private FragmentSecondBinding binding;
         anim.start();
 
     }
-
 
 
 @Override

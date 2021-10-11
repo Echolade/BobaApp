@@ -1,5 +1,6 @@
 package com.example.boba;
 
+import android.content.Intent;
 import android.os.Bundle;
 import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,11 +9,14 @@ import android.view.View;
 import androidx.dynamicanimation.animation.DynamicAnimation;
 import androidx.dynamicanimation.animation.SpringAnimation;
 import androidx.dynamicanimation.animation.SpringForce;
+import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import com.example.boba.databinding.ActivityTestBinding;
+import com.google.android.material.transition.MaterialArcMotion;
+import com.google.android.material.transition.MaterialContainerTransform;
 
 public class testActivity extends AppCompatActivity {
 
@@ -35,11 +39,38 @@ private ActivityTestBinding binding;
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startActivity(new Intent(testActivity.this, BobaLog.class));
+                Snackbar.make(view, "Returning to List", Snackbar.LENGTH_LONG)
+                        .setAction("Returning to list", null).show();
+
             }
         });
+
     }
+
+
+
+
+//    public void materialtransformation () {
+//
+//        MaterialContainerTransform meta = new MaterialContainerTransform();
+//        meta.addTarget(SecondFragment.class);
+//        meta.setDuration(500);
+//        getWindow().getSharedElementEnterTransition(meta);
+//        getWindow().getSharedElementReturnTransition(meta);
+//        pathmotion = meta.MaterialArcMotion();
+//
+//        interloper = FastOutSlowInInterpolator;
+//        View startview = findViewById(R.id.fab);
+//        Class<SecondFragment> endview = SecondFragment.class;
+//
+//        meta.getStartView();
+//        meta.getEndView() = ""
+//
+//    }
+
+
+
 
     @Override
     public boolean onSupportNavigateUp() {

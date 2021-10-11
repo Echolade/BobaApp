@@ -30,20 +30,12 @@
 
     <ImageView
         android:id="@+id/bobaman"
-        android:layout_width="172dp"
-        android:layout_height="195dp"
+        android:layout_width="141dp"
+        android:layout_height="141dp"
         android:layout_marginStart="116dp"
         android:layout_marginTop="4dp"
         android:src="@drawable/boba_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Spring animation testing"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="376dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
